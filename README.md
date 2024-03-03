@@ -1,4 +1,5 @@
 # HAR
+## Details
 In the realm of human activity recognition, our project focuses on addressing the challenge of accurately identifying and classifying human activities in low-light conditions. We have implemented a cutting-edge Long Short-Term Memory Recurrent Neural Network (LRCN) model, integrating LSTM, RNN, CNN, and GRU architectures, to enhance the robustness of our system.
 
 Our dataset is meticulously curated to simulate arid environmental conditions, providing a realistic scenario for activity recognition in challenging settings. The LRCN model has proven to be exceptionally effective in capturing both spatial and temporal dependencies inherent in human activities, especially when visibility is compromised.
