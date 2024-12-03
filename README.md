@@ -47,7 +47,7 @@ Generate plots for model evaluation metrics such as accuracy and loss.
    ```
 2. Navigate to the project directory:
    ```bash
-   cd your-repo-name
+   cd Human-Activity-Recognition-in-Dark
    ```
 3. Open the Jupyter notebook:
    ```bash
@@ -68,12 +68,3 @@ Generate plots for model evaluation metrics such as accuracy and loss.
 The project provides:
 - Trained LRCN models capable of recognizing human activities from video sequences.
 - Visualizations of training accuracy and loss to assess model performance.
-
-## Acknowledgments
-This project uses concepts and tools from machine learning and computer vision to address challenges in activity recognition. Special thanks to open-source libraries and frameworks that enable efficient implementation.
-
-## License
-This project is licensed under the [MIT License](LICENSE).
-```
-
-You can copy-paste this directly into a `README.md` file. Let me know if anything else is needed!
