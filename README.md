@@ -1,11 +1,79 @@
-# HAR
-## Details
-In the realm of human activity recognition, our project focuses on addressing the challenge of accurately identifying and classifying human activities in low-light conditions. We have implemented a cutting-edge Long Short-Term Memory Recurrent Neural Network (LRCN) model, integrating LSTM, RNN, CNN, and GRU architectures, to enhance the robustness of our system.
 
-Our dataset is meticulously curated to simulate arid environmental conditions, providing a realistic scenario for activity recognition in challenging settings. The LRCN model has proven to be exceptionally effective in capturing both spatial and temporal dependencies inherent in human activities, especially when visibility is compromised.
+# Project Title
+Human Activity Recognition (HAR) using Deep Learning
 
-The LSTM (Long Short-Term Memory) component of our model excels in retaining crucial information over extended periods, allowing the system to discern complex activity patterns. RNN (Recurrent Neural Network) architecture enhances the temporal understanding by incorporating feedback loops, crucial for recognizing sequential activities. CNN (Convolutional Neural Network) contributes by efficiently extracting spatial features from the input data, ensuring the model's capability to recognize distinctive postures or movements even in low-light conditions. Finally, GRU (Gated Recurrent Unit) further refines the temporal dynamics, offering a balance between computational efficiency and model performance.
+## Description
+This project implements a Human Activity Recognition (HAR) system using a Long-term Recurrent Convolutional Network (LRCN). The notebook includes functionality for extracting video frames, preparing datasets, building the LRCN model, and visualizing training metrics.
 
-By combining these diverse components into the LRCN model, our system achieves state-of-the-art accuracy in identifying various human activities such as walking, running, and stationary behaviors in darkness. The model's adaptability to challenging environmental conditions positions it as a valuable tool in surveillance, security, and safety applications where reliable human activity recognition is paramount.
+## Features
+- **Frame Extraction**: Efficiently extract frames from video data.
+- **Dataset Creation**: Prepare a dataset suitable for training and evaluation.
+- **Model Implementation**: Build and train an LRCN model using TensorFlow.
+- **Visualization**: Plot metrics to evaluate the model’s performance.
 
-In conclusion, our project leverages advanced deep learning techniques, specifically the LRCN model, to address the unique challenges of human activity recognition in low-light conditions. The integration of LSTM, RNN, CNN, and GRU architectures ensures a comprehensive understanding of both spatial and temporal aspects, making our model a robust solution for real-world applications in arid environments.
+## Requirements
+The following Python libraries are required:
+- OpenCV (`cv2`)
+- TensorFlow (`tensorflow`)
+- NumPy
+- Matplotlib
+- OS
+- Random
+- Math
+- Datetime
+
+To install the dependencies, use:
+```bash
+pip install opencv-python tensorflow numpy matplotlib
+```
+
+## Functions
+### `frames_extraction`
+Extract frames from video files for dataset creation.
+
+### `create_dataset`
+Organize and preprocess data into a format suitable for model training.
+
+### `create_LRCN_model`
+Build an LRCN model leveraging TensorFlow/Keras to process sequential data.
+
+### `plot_metric`
+Generate plots for model evaluation metrics such as accuracy and loss.
+
+## Usage
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ns-0437/Human-Activity-Recognition-in-Dark.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd your-repo-name
+   ```
+3. Open the Jupyter notebook:
+   ```bash
+   jupyter notebook arid_HAR.ipynb
+   ```
+4. Run the cells sequentially to execute the entire workflow.
+
+## Project Structure
+```
+/
+|-- arid_HAR.ipynb   # Main notebook file
+|-- data/            # Directory for storing video data
+|-- models/          # Directory for saving trained models
+|-- plots/           # Directory for storing metric visualizations
+```
+
+## Results
+The project provides:
+- Trained LRCN models capable of recognizing human activities from video sequences.
+- Visualizations of training accuracy and loss to assess model performance.
+
+## Acknowledgments
+This project uses concepts and tools from machine learning and computer vision to address challenges in activity recognition. Special thanks to open-source libraries and frameworks that enable efficient implementation.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+```
+
+You can copy-paste this directly into a `README.md` file. Let me know if anything else is needed!
