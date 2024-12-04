@@ -1,6 +1,6 @@
 
 # Project Title
-Human Activity Recognition (HAR) using Deep Learning
+Human Activity Recognition in Dark
 
 ## Description
 This project implements a Human Activity Recognition (HAR) system using a Long-term Recurrent Convolutional Network (LRCN). The notebook includes functionality for extracting video frames, preparing datasets, building the LRCN model, and visualizing training metrics.
@@ -26,6 +26,7 @@ To install the dependencies, use:
 ```bash
 pip install opencv-python tensorflow numpy matplotlib
 ```
+
 
 ## Functions
 ### `frames_extraction`
