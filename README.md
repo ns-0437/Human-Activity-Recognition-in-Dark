@@ -67,5 +67,6 @@ Generate plots for model evaluation metrics such as accuracy and loss.
 
 ## Results
 The project provides:
+
 - Trained LRCN models capable of recognizing human activities from video sequences.
 - Visualizations of training accuracy and loss to assess model performance.
