@@ -1,0 +1,14 @@
+# Local data and outputs (see README)
+data/
+models/
+plots/
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+
+# Keras checkpoints
+*.h5
+*.keras
