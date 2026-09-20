@@ -12,21 +12,25 @@ This project implements a Human Activity Recognition (HAR) system using a Long-t
 - **Visualization**: Plot metrics to evaluate the model’s performance.
 
 ## Requirements
-The following Python libraries are required:
-- OpenCV (`cv2`)
+Python libraries (the standard-library modules the notebook also uses need no install):
+- OpenCV (`opencv-python`)
 - TensorFlow (`tensorflow`)
 - NumPy
 - Matplotlib
-- OS
-- Random
-- Math
-- Datetime
+- scikit-learn (train/test split and evaluation metrics)
 
 To install the dependencies, use:
 ```bash
-pip install opencv-python tensorflow numpy matplotlib
+pip install -r requirements.txt
 ```
 
+## Dataset
+The notebook expects the ARID video clips (one folder per action class). Point it at them with the
+`ARID_DATASET_DIR` environment variable, or place them in `data/clips_v1.5`:
+```bash
+export ARID_DATASET_DIR=/path/to/clips_v1.5   # PowerShell: $env:ARID_DATASET_DIR = "C:\path\to\clips_v1.5"
+```
+`CLASSES_LIST` in the notebook selects which classes to train on (default: `Drink`, `Jump`).
 
 ## Functions
 ### `frames_extraction`
